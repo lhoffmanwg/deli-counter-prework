@@ -21,17 +21,17 @@ def take_a_number(katz_deli, name)
   end    
 end  
 
-def now_serving(array)
-  if array = []
+def now_serving(other_deli)
+  if other_deli = []
    puts "There is nobody waiting to be served!"
   else 
     #name = array.first 
     #puts "Currently serving #{name}."
     #array.shift 
   #end
-  array.each do |name|
+   other_deli.each do |name|
     puts "Currently serving #{name}"
-    array.shift
+    other_deli.shift
   end  
   end  
 end  
