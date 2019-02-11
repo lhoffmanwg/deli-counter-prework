@@ -22,15 +22,15 @@ def take_a_number(katz_deli, name)
 end  
 
 def now_serving(array)
-  array.each do |name|
-   if name = ""
+  #array.each do |name|
+   if array == []
      puts "There is nobody waiting to be served!"
    else 
     name = array.first 
     puts "Currently serving #{name}."
     array.shift 
    end
-  end 
+ # end 
 end  
   
   
